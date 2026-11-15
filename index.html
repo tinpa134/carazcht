@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lantern at the Edge of Summer</title>
+    <meta
+      name="description"
+      content="A cozy digital storybook with a reading interface and chapter navigation."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">A dreamy story</p>
+          <h1>The Lantern at the Edge of Summer</h1>
+          <p class="author-line">By Ernestina S. Berkoh</p>
+        </div>
+        <button id="themeToggle" class="toggle" type="button" aria-label="Toggle theme">
+          Night mode
+        </button>
+      </header>
+
+      <div class="book-layout">
+        <aside class="sidebar" aria-label="Table of contents">
+          <div class="sidebar-card">
+            <p class="section-label">Contents</p>
+            <nav id="toc" class="toc"></nav>
+          </div>
+        </aside>
+
+        <main class="reader" aria-live="polite">
+          <article id="chapterContent" class="chapter-card"></article>
+
+          <div class="reader-footer">
+            <button id="prevBtn" class="nav-btn" type="button">Previous</button>
+            <div class="progress-wrap" aria-label="Reading progress">
+              <div class="progress-label">
+                <span id="progressText">Chapter 1 of 5</span>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <span id="progressFill"></span>
+              </div>
+            </div>
+            <button id="nextBtn" class="nav-btn primary" type="button">Next</button>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
