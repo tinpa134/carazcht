@@ -19,3 +19,5 @@ Then open http://localhost:8000 in your browser.
 - Edit the chapter list in `script.js`
 - Change the visual theme in `styles.css`
 - Update the page copy in `index.html`
+
+The site includes `robots.txt` and `sitemap.xml` to help search engines discover it. Search indexing is controlled by each search engine and is not guaranteed.

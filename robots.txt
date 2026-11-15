@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tinpa134.github.io/carazcht/sitemap.xml
